@@ -1,8 +1,18 @@
+* {
+   background-color: darkslategray;
+   color:  white;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  padding-top: 10%;
+
+
+}
+
 .grid {
-    display: flex;
-    flex-wrap: wrap;
     height: 300px;
     width: 400px;
-
-
+    
 }

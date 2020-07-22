@@ -5,18 +5,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const memoryCards = [
 
         {
-            name: 'fries',
-            img: 'images/fries.png'
+            name: 'deadpool',
+            img: 'images/deadpool.png'
         },
 
         {
-            name: 'fries',
-            img: 'images/fries.png'
-        },
-
-        {
-            name: 'batman',
-            img: 'images/batman.png'
+            name: 'deadpool',
+            img: 'images/deadpool.png'
         },
 
         {
@@ -25,45 +20,50 @@ document.addEventListener('DOMContentLoaded', () => {
         },
 
         {
-            name: 'cherry',
-            img: 'images/cherry.png'
+            name: 'batman',
+            img: 'images/batman.png'
+        },
+
+        {
+            name: 'flash',
+            img: 'images/flash.png'
         },
 
 
         {
-            name: 'cherry',
-            img: 'images/cherry.png'
+            name: 'flash',
+            img: 'images/flash.png'
         },
 
 
         {
-            name: 'heart',
-            img: 'images/heart.png'
+            name: 'four',
+            img: 'images/four.png'
         },
 
         {
-            name: 'heart',
-            img: 'images/heart.png'
+            name: 'four',
+            img: 'images/four.png'
         },
 
         {
-            name: 'ice-cream',
-            img: 'images/ice-cream.png'
+            name: 'lantern',
+            img: 'images/lantern.png'
         },
 
         {
-            name: 'ice-cream',
-            img: 'images/ice-cream.png'
+            name: 'lantern',
+            img: 'images/lantern.png'
         },
 
         {
-            name: 'melon',
-            img: 'images/melon.png'
+            name: 'superman',
+            img: 'images/superman.png'
         },
 
         {
-            name: 'melon',
-            img: 'images/melon.png'
+            name: 'superman',
+            img: 'images/superman.png'
         }
     ]
 
@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
      function createGameBoard() {
         for (let i = 0; i < memoryCards.length; i++) {
             var card = document.createElement('img')
-            card.setAttribute('src', 'images/blank.png')
+            card.setAttribute('src', 'images/city.png')
             card.setAttribute('data-id', i)
             card.addEventListener('click', turnCard)
             grid.appendChild(card)
@@ -99,8 +99,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 cards[optionTwoId].setAttribute['src', 'images/white.png']
                 cardsWon.push(cardsChosen)
             } else {
-                cards[optionOneId].setAttribute('src', 'images/blank.png')
-                cards[optionTwoId].setAttribute('src', 'images/blank.png')
+                cards[optionOneId].setAttribute('src', 'images/city.png')
+                cards[optionTwoId].setAttribute('src', 'images/city.png')
                 alert('no pair, try agian')
             }
             
